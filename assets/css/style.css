@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7CRoboto:100,300,400,500,700,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", "Roboto", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 16px;
+    height: 100vh;
+    width: auto;
+    background: rgb(22,37,73);
+    background-repeat: no-repeat;
+    background: linear-gradient(162deg, rgba(22,37,73,1) 0%, rgba(51,0,89,1) 100%);
+    color: #cdcdcd;
+    position: relative;
+    z-index: 0;
+}
+
+.title{
+    margin-bottom: 48px;
+}
+
+h2{
+    font-size: 52px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.81;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+}
+
+.button{
+    width: 343px;
+    height: 52px;
+    border-radius: 28.5px;
+    border: solid 3px #4fe0eb;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin: 0 auto;
+    transition: background-color,color .5s;
+}
+.button:hover{
+    color: rgba(22,37,73,1);
+    background-color: #4fe0eb;
+}
+
+
+/*header logo*/
+
+.homepage__header-logo {
+    position: absolute;
+    width: 100px;
+}
+
+/*body*/
+.homepage__main{
+    position: relative;
+    z-index: 2;
+    height: 80vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+.homepage__main--astronaut{
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+
+.homepage__main-underline{
+    position: relative;
+    width: 80%;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+.homepage__main-underline span:first-child{
+    background-color: #4fe0eb;
+    height: 4px;
+    border-radius: 10px;
+    width: 40%;
+    position: absolute;
+    left: 0;
+}
+.homepage__main-underline span{
+    background-color: #4fe0eb;
+    height: 4px;
+    border-radius: 10px;
+    width: 20%;
+    position: absolute;
+    left: 50%;
+}
+
+.homepage__main-underline::after{
+    position: absolute;
+    right: 0;
+    content: '';
+    background-color: #4fe0eb;
+    width: 20%;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.homepage__main p{
+    margin-bottom: 48px;
+}
+
+
+
+
+/*404*/
+.title.title404 h2{
+    width: 60%;
+}
+
+.astronaut-404{
+    position: absolute;
+    height: 60vh;
+    right: -25vw;
+}
+.p404{
+    width: 70%;
+}
+.button404{
+    background-color: #4fe0eb;
+    color: rgba(22,37,73,1);;
+}
+
+
+/*star-field*/
+
+#star-field {
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.star {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+.star .far {
+    width: 1px ;
+    height: 1px ;
+}
+
+.star .near {
+    width: 4px;
+    height: 4px;
+}
+
+.star .white {
+    background: #fff;
+    box-shadow: 0 0 15px #fff;
+}
+
+.star .yellow {
+    background: #BFBB40;
+    box-shadow: 0 0 15px #BFBB40;
+}
+
+.star .blue {
+    background: #4444ff;
+    box-shadow: 0 0 15px #4444ff;
+}
+
+.star .red {
+    background: #ff4444;
+    box-shadow: 0 0 15px #ff4444;
+}

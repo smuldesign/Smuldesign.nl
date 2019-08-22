@@ -1,0 +1,23 @@
+{
+  "name": "smuldesign.nl",
+  "version": "1.0.0",
+  "description": "Only use node for sass and packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smuldesign/smuldesign.nl.git"
+  },
+  "author": " <Your Name> (example.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smuldesign/smuldesign.nl/issues"
+  },
+  "homepage": "https://github.com/smuldesign/smuldesign.nl#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

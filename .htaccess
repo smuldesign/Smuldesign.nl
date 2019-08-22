@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+#Alternate default index pages
+DirectoryIndex index.php
+
+#404 page
+ErrorDocument 404 /404.php

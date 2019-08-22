@@ -10,13 +10,14 @@ body{
     margin: 0;
     padding: 16px;
     height: 100vh;
-    width: auto;
+    width: 100vw;
     background: rgb(22,37,73);
     background-repeat: no-repeat;
     background: linear-gradient(162deg, rgba(22,37,73,1) 0%, rgba(51,0,89,1) 100%);
     color: #cdcdcd;
     position: relative;
     z-index: 0;
+    overflow-x: hidden;
 }
 
 .title{
@@ -58,6 +59,7 @@ p{
     color: #ffffff;
     margin: 0 auto;
     transition: background-color,color .5s;
+    display: block;
 }
 .button:hover{
     color: rgba(22,37,73,1);
@@ -67,16 +69,12 @@ p{
 
 /*header logo*/
 
-.homepage__header-logo {
-    position: absolute;
-    width: 100px;
-}
+
 
 /*body*/
 .homepage__main{
     position: relative;
     z-index: 2;
-    height: 80vh;
     margin-top: 20vh;
     display: flex;
     flex-direction: column;
@@ -136,11 +134,12 @@ p{
 
 .astronaut-404{
     position: absolute;
-    height: 60vh;
-    right: -25vw;
+    height: 50vh;
+    right: 0;
+    overflow-x: hidden;
 }
 .p404{
-    width: 70%;
+    width: 60%;
 }
 .button404{
     background-color: #4fe0eb;
@@ -153,8 +152,10 @@ p{
 #star-field {
     width: 100%;
     overflow-x: hidden;
-    height: 100%;
+    height: 100vh;
     position: absolute;
+    margin: 0;
+    padding: 0;
     top: 0;
     left: 0;
     z-index: 1;
